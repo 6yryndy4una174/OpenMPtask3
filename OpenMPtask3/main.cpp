@@ -90,5 +90,10 @@ int main() {
 	end = clock();
 	std::cout << end - start << std::endl;
 
+	start = clock();
+	ParallelFloid(graph, 100);
+	end = clock();
+	std::cout << end - start << std::endl;
+
 	return 0;
 }
